@@ -1,0 +1,40 @@
+{
+  "name": "MKTXP",
+  "slug": "mktxp",
+  "categories": [
+    5
+  ],
+  "date_created": "2024-05-02",
+  "type": "ct",
+  "updateable": false,
+  "privileged": false,
+  "interface_port": 4000,
+  "documentation": null,
+  "website": "https://0xerr0r.github.io/mktxp/",
+  "logo": "https://mikrotik.com/img/mtv2/favicon-32x32.png",
+  "config_path": "/etc/mktxp/mktxp.conf",
+  "description": "MKTXP is a Prometheus Exporter for Mikrotik RouterOS devices. It gathers and exports a rich set of metrics across multiple routers, all easily configurable via built-in CLI interface. While simple to use, MKTXP supports advanced features such as automatic IP address resolution with both local & remote DHCP servers, concurrent exports across multiple router devices, configurable data processing & transformations, optional bandwidth testing, etc.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/mktxp.sh",
+      "resources": {
+        "cpu": 1,
+        "ram": 256,
+        "hdd": 1,
+        "os": "debian",
+        "version": "12"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "You need to edit the config file manually to add devices",
+      "type": "info"
+    }
+  ]
+}
